@@ -1,0 +1,71 @@
+* DHCP
+    -Dynamic Host Configuration Protocol
+    -Assigns unique IPs to hosts
+    -Provides the subnet masks, DNS, default gateway
+    -Can be client or server
+    -A computer runs a DHCP client and that asks for a unique IP address.
+    -A DHCP server manages the IP addresses. Runs on routers or servers
+    -Uses UDP Ports
+        -Client: 68
+        -Server: 67
+    -Steps:
+        1. DHCPDiscovery: A client asks for a DHCP server on startup. 
+        2. DHCPOffer: Server returns a offer (IP address) to the host.
+        3. DHCPRequest: the client takes the offer from the host, and sends back a message saying it took the IP
+        4. DHCPPACK: The server sends to the client a pack containing the IP address, the dns and gateway.
+
+* DNS
+    -Domain Name System
+    -Maps domain names to IP addresses
+    -Server that holds a bunch of domain names and their respective IP addresses
+
+* Transport Protocols:
+    -Packets structure:
+        -Application
+        -Transport (UDP, TCP)
+        -Network
+        -Link
+        -Physical
+    -Lets multiple applications use one network simultaneously 
+
+* Transport Protocols:
+    * UDP
+        -User Datagram Protocol
+        -Message oriented (mail)
+        -Small packet sizes
+        -No connection to create before sending data (handshake)
+        -More control over when data is sent
+        -No error recovery. Discard corrupted segments or returns a warning
+        -No compensation on lost Packets
+        -Can have wrong order 
+    * TCP:
+        -Transmission Control Protocols
+        -Stream oriented(phone conversations)
+        -More reliable, connection based (handshake)
+        -Ask to establish a connection, wait for the okay, send packet.
+        -Delivery acknowledgements from client to server
+        -Retransmission
+        -In-order delivery
+        -Congestion control
+        -Bigger header
+* Network Protocols
+    * IS-IS:
+        -Intermediate System to Intermediate System
+        -Uses Dijkstra's Shortest Path Algorithm
+        -Not based on IP (unless we do Integrated IS-IS)
+        -Bulk packet routing on an intranet.
+        -Routing
+            -Level 1: Routing within an area
+            -Level 2: Routing between areas
+        - Switching
+        - Datagrams
+        - Graph theory concepts {paths, directionality, path searching, etc}
+    *BGP 
+    -Border Gateway Protocol
+    -Exchange information between autonomous networks
+    -Deals with the way Autonomous Systems communicate on IP
+    -Shortest path routing?
+    
+                
+
+        
